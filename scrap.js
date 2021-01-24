@@ -21,6 +21,7 @@ request(url, (error, response, html) => {
         .attr('href');
       const date = $(el)
         .find('small')
+        .find('a')
         .text()
         .replace(/,/, '');
 
